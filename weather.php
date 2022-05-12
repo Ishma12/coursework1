@@ -46,7 +46,6 @@ console.log('ServiceWorker registration failed: ', err);
 
 }
 
-// Check browser cache first, use if there and less than 10 seconds old
 if(localStorage.when != null
 && parseInt(localStorage.when) + 1000 > Date.now()) {
 let freshness = Math.round((Date.now() - localStorage.when)/1000) + " second(s)";
