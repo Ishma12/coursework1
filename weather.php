@@ -62,7 +62,7 @@ let freshness = Math.round((Date.now() - localStorage.when)/1000) + " second(s)"
 // No local cache, access network
 } else {
 // Fetch weather data from API for given city
-fetch('/getapi.php?city=Miami') //retrive the data from the php.
+fetch('getapi.php?city=Miami') //retrive the data from the php.
 // Convert response string to json object
 .then(response => response.json())
 .then(response => {
