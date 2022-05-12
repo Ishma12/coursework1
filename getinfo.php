@@ -3,6 +3,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 // Select weather data for given parameters-------------------
+$mysqli = new mysqli("bzcjtvmcvlfzgjpauwz3-mysql.services.clever-cloud.com","u5cbcepbppf1rtio","W9QFf3nl20jGsSw47bu4","bzcjtvmcvlfzgjpauwz3"); //it contains server,username,password and name of database respectively.
 $sql = "SELECT *
 FROM weatherdata
 WHERE weather_city = '{$_GET['city']}'
